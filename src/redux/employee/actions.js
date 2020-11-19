@@ -1,0 +1,29 @@
+const actions = {
+  GET_EMPLOYEES: "GET_EMPLOYEES",
+  GET_EMPLOYEES_SUCCESS: "GET_EMPLOYEES_SUCCESS",
+  GET_EMPLOYEES_FAILED: "GET_EMPLOYEES_FAILED",
+  POST_EMPLOYEES_DETAILS: "POST_EMPLOYEES_DETAILS",
+  POST_EMPLOYEES_SUCCESS: "POST_EMPLOYEES_SUCCESS",
+  POST_EMPLOYEES_FAILED: "POST_EMPLOYEES_FAILED",
+  GET_EMPLOYEES_DETAIL: "GET_EMPLOYEES_DETAIL",
+  GET_EMPLOYEES_DETAILS_SUCCESS: "GET_EMPLOYEES_DETAILS_SUCCESS",
+  GET_EMPLOYEES_DETAILS_FAILED: "GET_EMPLOYEES_DETAILS_FAILED",
+  SELECT_EMPLOYEE: "SELECT_EMPLOYEE",
+
+  getEmployees: () => ({
+    type: actions.GET_EMPLOYEES,
+  }),
+  getEmployeesDetail: (payload) => ({
+    type: actions.GET_EMPLOYEES_DETAIL,
+    payload,
+  }),
+  postEmployeeDetails: (payload) => ({
+    type: actions.POST_EMPLOYEES_DETAILS,
+    payload,
+  }),
+  selectEmployee: (payload) => ({
+    type: actions.SELECT_EMPLOYEE,
+    payload,
+  }),
+};
+export default actions;
