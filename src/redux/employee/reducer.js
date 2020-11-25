@@ -28,6 +28,7 @@ export default function Employees(state = initialState, action) {
     case actions.GET_EMPLOYEES_FAILED || actions.GET_EMPLOYEES_DETAILS_FAILED:
       return {
         ...state,
+        error: "error",
         loading: false,
       };
     case actions.SELECT_EMPLOYEE:
